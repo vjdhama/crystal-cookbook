@@ -12,7 +12,7 @@ cookbook 'crystal', github: 'vjdhama/crystal-cookbook'
 ##TODO'S
 
 - [ ] Add option for installing different versions.
-- [ ] Add travis for running kitchen tests.
+- [x] Add travis for running kitchen tests.
 
 ## Contributing
 
