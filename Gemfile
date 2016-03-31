@@ -8,7 +8,6 @@ gem 'colorize'
 gem 'pry'
 
 gem 'serverspec'
-gem 'test-kitchen'
 gem 'kitchen-vagrant'
 gem 'kitchen-gce'
 
