@@ -1,5 +1,4 @@
-# crystal-cookbook [![Build
-Status](https://travis-ci.org/vjdhama/crystal-cookbook.svg?branch=master)](https://travis-ci.org/vjdhama/crystal-cookbook)
+# crystal-cookbook [![Build Status](https://travis-ci.org/vjdhama/crystal-cookbook.svg?branch=master)](https://travis-ci.org/vjdhama/crystal-cookbook)
 Chef cookbook for installing crystal.
 
 ## Usage
