@@ -12,6 +12,11 @@ cookbook 'crystal', github: 'vjdhama/crystal-cookbook'
 ##TODO'S
 
 - [ ] Add option for installing different versions.
+- [ ] Add support more platforms
+  - [x] Ubuntu
+  - [x] Debian
+  - [x] Centos
+  - [ ] Alpine
 - [x] Add travis for running kitchen tests.
 
 ## Contributing

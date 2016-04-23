@@ -3,8 +3,15 @@
 # Recipe:: prepare
 #
 
+case node['platform']
+when 'debian', 'ubuntu'
+  package_manager = 'apt'
+when 'redhat', 'centos', 'fedora'
+  package_manager = 'yum'
+end
+
 remote_file '/tmp/setup.sh' do
-  source 'http://dist.crystal-lang.org/apt/setup.sh'
+  source "http://dist.crystal-lang.org/#{package_manager}/setup.sh"
   owner 'root'
   group 'root'
   mode '0755'
