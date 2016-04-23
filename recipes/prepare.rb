@@ -7,7 +7,7 @@ case node['platform']
 when 'debian', 'ubuntu'
   package_manager = 'apt'
 when 'redhat', 'centos', 'fedora'
-  package_manager = 'yum'
+  package_manager = 'rpm'
 end
 
 remote_file '/tmp/setup.sh' do
