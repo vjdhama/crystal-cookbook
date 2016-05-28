@@ -3,6 +3,12 @@ rvm:
 
 sudo: true
 
+
+env:
+  matrix:
+    - KITCHEN_REGEXP=centos
+    - KITCHEN_REGEXP=ubuntu
+
 before_script:
   - source <(curl -sL https://raw.githubusercontent.com/zuazo/kitchen-in-travis/0.4.0/scripts/start_docker.sh)
 
