@@ -5,3 +5,5 @@ license          'MIT'
 description      'Installs/Configures crystal'
 long_description 'Cookbook for installing crystal'
 version          '0.2.2'
+
+depends 'homebrew'
