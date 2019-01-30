@@ -19,13 +19,10 @@ remote_file '/tmp/setup.sh' do
   notifies :run, 'bash[update]', :immediately
 end
 
-bash "update" do
+bash 'update' do
   user 'root'
   group 'root'
   cwd '/tmp'
-  code <<-EOH
-    ./setup.sh
-  EOH
+  code './setup.sh'
   action :nothing
 end
-
