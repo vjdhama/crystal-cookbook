@@ -17,15 +17,12 @@ remote_file '/tmp/setup.sh' do
   mode '0755'
   action :create
   notifies :run, 'bash[update]', :immediately
-  not_if { platform?('mac_os_x') }
 end
 
-bash "update" do
+bash 'update' do
   user 'root'
   group 'root'
   cwd '/tmp'
-  code <<-EOH
-    ./setup.sh
-  EOH
+  code './setup.sh'
   action :nothing
 end

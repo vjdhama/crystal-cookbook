@@ -17,6 +17,5 @@ platforms:
 suites:
   - name: default
     run_list: 
-      - recipe[crystal::prepare]
       - recipe[crystal::install]
     attributes:
